@@ -30,14 +30,12 @@ Whenever a customer submits feedback through a form, the workflow automatically:
 
 ## 🧩 Workflow Structure
 
-```mermaid
-flowchart LR
-A[Form Submission] --> B[Sentiment Analysis (Google Gemini)]
-B --> C[Code in JavaScript]
-C --> D{Positive Feedback?}
-D -->|Yes| E[Append to Customer Feedback Sheet]
-D -->|No| F[Append to Escalation Sheet]
-F --> G[Send Alert Email to Customer Success Team]
+- Form Submission Trigger
+- Sentiment Analysis (Google Gemini)
+- JavaScript Logic
+- Conditional Routing (If Node)
+- Google Sheets Integration
+- Gmail Integration
 
 ---
 
